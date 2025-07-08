@@ -1,0 +1,54 @@
+#include <iostream>
+#include <string>
+using namespace std;
+
+
+int main() {
+	string user; 
+	int pass;
+	int barang;
+	int pilih;
+	int tambah;
+	char kode;
+	int buku;
+	
+	
+	cout << "======= Selamat Datang di Perpustakaan =======" << endl;
+	cout << "Masukkan Username : ";
+	cin >> user;
+	cout << "Password : ";
+	cin >> pass;
+	cout <<endl;
+	cout <<"anda berhasil login!"<<endl;
+	
+	
+	cout << "----------Daftar Buku di perpustakaan---------" << endl;
+	cout << "1. Buku masak " << endl;
+	cout << "2. Buku Novel " << endl;
+	cout << "3. Buku Fiksi " << endl;
+	cout << "4. Buku Non Fiksi " << endl;
+	cout << "\nMasukkan/pilih buku anda: "<<endl;
+	cin >> barang;
+	
+		switch (pilih) {
+		case 1:
+			cout << "Buku masak " << endl;
+		break;
+		case 2:
+			cout << "Buku novel " << endl;
+		break;
+		case 3:
+			cout << "Buku fiksi " << endl;
+		break;
+		case 4:
+			cout << "Buku Non fiksi " << endl;
+		break;
+		default:
+			cout << "tidak ditemukan";
+	}
+	
+	cout<<"berikut buku yang anda pinjam" << barang <<endl;
+	cout<<"========== Terima kasih ===========";
+	
+	return 0;
+}
